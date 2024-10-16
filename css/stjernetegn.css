@@ -1,0 +1,333 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures the html and body elements both take up the full height */
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: cinzel;
+    src: url(fonts/cinzel.ttf);
+}
+
+@font-face {
+    font-family: cairo;
+    src: url(fonts/cairo.ttf);
+}
+
+@font-face {
+    font-family: spectral;
+    src: url(fonts/spectral.ttf);
+}
+
+:root{
+    --color01: #f6b26b;
+    --color02: #ffffff;
+    --color03: #c7beb1c1;
+    --color04: #ffffff75;
+    --color05: #f6b26b9f;
+}
+
+body {
+    background-image: url(background-01.jpg);
+    background-color: var(--color04);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#return{
+    position: absolute;
+    top: 20px;
+    margin-left: 90px;
+    font-family: cairo;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color02);
+}
+
+#return-arrow{
+    width: 22px;
+    position: absolute;
+    margin-left: 62px;
+    top: 28px;
+}
+
+#return:hover{
+    font-weight: 700;
+}
+
+.return-class a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: absolute;
+    top:0;
+    right:0;
+    background: var(--color04);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: auto;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 150;
+    font-family: cairo;
+    border-bottom-left-radius: 20px;
+    width: 720px;
+    height: auto;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    color: var(--color01);
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background:#927798;
+    color: #fff;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    width: 190px;
+    background: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top:0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: var(--color01);
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px){
+
+
+    header {
+        padding: 20px;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background:#927798;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background:#927798;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+}
+
+h1{
+    position: absolute;
+    top: 210px;
+    font-family: cinzel;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--color02);
+    text-transform: uppercase;
+    margin-left: 25%;
+}
+
+h2{
+    position: absolute;
+    top: 330px;
+    font-family: cairo;
+    font-size: 1.3rem;
+    color: var(--color02);
+    text-transform: uppercase;
+    margin-left: 40%;
+    padding: 15px;
+    background-color: var(--color05);
+}
+
+#logo {
+    width: 5rem;
+    position: fixed;
+    bottom: 50px;
+    right: 45px;
+    z-index: 99;
+}
+
+#logo-text{
+    font-family: cinzel;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color02);
+    z-index: 500;
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+}
+
+.empty-box {
+    position: absolute;
+    top: 400px;
+    width: 1300px;
+    height: 224px;
+    background-color: var(--color04);
+    margin-left: 70px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#instagram{
+    position: absolute;
+    top: 743px;
+    width: 40px;
+    z-index: 200;
+    margin-left: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#facebook{
+    position: absolute;
+    top: 729px;
+    width: 65px;
+    z-index: 200;
+    margin-left: 70px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#mail{
+    position: absolute;
+    top: 740px;
+    width: 50px;
+    z-index: 200;
+    margin-left: 138px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#instagram:hover{
+    transform: scale(1.1);
+}
+
+#facebook:hover{
+    transform: scale(1.1);
+}
+
+#mail:hover{
+    transform: scale(1.1);
+}
+
+.zodiac-img{
+    position: absolute;
+    top: 400px;
+    width: 200px;
+    margin-left: 80px;
+    z-index: 300;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#taurus{
+    margin-left: 285px;
+    width: 210px;
+}
+
+#gemini{
+    margin-left: 490px;
+    width: 232px;
+    top: 395px;
+}
+
+#cancer{
+    margin-left: 725px;
+    width: 210px;
+    top: 410px;
+}
+
+#leo{
+    margin-left: 930px;
+    top: 410px;
+}
+
+#virgo{
+    margin-left: 1140px;
+    width: 220px;
+    top: 395px;
+}
+
+#zodiac-text{
+    z-index: 500;
+    position: absolute;
+    top: 560px;
+    color: var(--color01);
+    font-family: cairo;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 140px;
+    margin-left: 140px;
+}
+
+#aries:hover, #taurus:hover, #gemini:hover, #cancer:hover, #leo:hover, #virgo:hover{
+    transform: scale(1.1);
+}
