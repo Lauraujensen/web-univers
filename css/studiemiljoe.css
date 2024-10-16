@@ -20,6 +20,11 @@ html, body {
     src: url(fonts/spectral.ttf);
 }
 
+@font-face {
+    font-family: bebas;
+    src: url(fonts/bebas.ttf);
+}
+
 :root{
     --color01: #f6b26b;
     --color02: #ffffff;
@@ -29,7 +34,7 @@ html, body {
 }
 
 body {
-    background-image: url(background-04.png);
+    background-image: url(long-background.jpg);
     background-color: var(--color04);
     background-size: cover;
     background-position: center;
@@ -38,7 +43,6 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 #return{
@@ -188,26 +192,182 @@ header label {
 }
 
 h1{
-    position: absolute;
-    top: 210px;
+    font-size: 40px;
     font-family: cinzel;
-    font-size: 3rem;
-    font-weight: 500;
-    color: var(--color02);
+    color: var(--color01);
     text-transform: uppercase;
-    margin-left: 25%;
+    position: absolute;
+    top: 260px;
+    left: 925px;
 }
 
-h2{
+#circle{
     position: absolute;
-    top: 330px;
+    top: 340px;
+    left: 1015px;
+    width: 70px;
+    height: auto;
+    z-index: 4;
+}
+
+#article-img-03{
+    position: absolute;
+    top: 400px;
+    left: 900px;
+    width: 300px;
+    height: auto;
+    border: #f6b26b solid 2px;
+    z-index: 3;
+}
+
+#img-03-square{
+    position: absolute;
+    top: 377px;
+    left: 877px;
+    width: 350px;
+    height: 350px;
+    background-color: var(--color04);
+}
+
+.advice-left{
+    position: absolute;
+    left: 0%;
+    width: 700px;
+    height: 200px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: var(--color04);
     font-family: cairo;
-    font-size: 1.3rem;
+    color: #927798;
+    box-sizing: border-box;
+    padding: 30px;
+    font-size: 20px;
+}
+
+#advice-01{
+    top: 200px;
+}
+
+#advice-02{
+    top: 450px;
+}
+
+#advice-03{
+    top: 700px;
+}
+
+.advice-right{
+    position: absolute;
+    right: 0%;
+    width: 700px;
+    height: 200px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: var(--color04);
+    font-family: cairo;
+    color: #927798;
+    box-sizing: border-box;
+    padding: 30px;
+    font-size: 20px;
+}
+
+#advice-04{
+    top: 1000px;
+}
+
+#advice-05{
+    top: 1250px;
+}
+
+#advice-06{
+    top: 1500px;
+}
+
+#circle-02{
+    position: absolute;
+    top: 1060px;
+    left: 330px;
+    width: 110px;
+    height: auto;
+    z-index: 4;
+}
+
+#article-img-04{
+    position: absolute;
+    top: 1151px;
+    left: 180px;
+    width: 400px;
+    height: auto;
+    border: #f6b26b solid 2px;
+    z-index: 3;
+}
+
+#img-04-square{
+    position: absolute;
+    top: 1128px;
+    left: 158px;
+    width: 450px;
+    height: 450px;
+    background-color: var(--color04);
+}
+
+#advice-07{
+    top: 1780px;
+}
+
+#advice-08{
+    top: 2030px;
+}
+
+#advice-09{
+    top: 2280px;
+}
+
+#circle-03{
+    position: absolute;
+    top: 1910px;
+    left: 1030px;
+    width: 80px;
+    height: auto;
+    z-index: 4;
+}
+
+#article-img-05{
+    position: absolute;
+    top: 1980px;
+    left: 900px;
+    width: 350px;
+    height: auto;
+    border: #f6b26b solid 2px;
+    z-index: 3;
+}
+
+#img-05-square{
+    position: absolute;
+    top: 1958px;
+    left: 877px;
+    width: 400px;
+    height: 400px;
+    background-color: var(--color04);
+}
+
+#another-article{
+    position: absolute;
+    top: 2350px;
+    left: 878px;
+    font-family: cairo;
     color: var(--color02);
-    text-transform: uppercase;
-    margin-left: 40%;
-    padding: 15px;
-    background-color: var(--color05);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#link{
+    color:#927798;
+    font-weight: 600;
+}
+
+#link:hover{
+    color: #6d4676;
 }
 
 #logo {
@@ -230,21 +390,10 @@ h2{
     right: 20px;
 }
 
-.empty-box {
-    position: absolute;
-    top: 400px;
-    width: 1450px;
-    height: 224px;
-    background-color: var(--color04);
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 #instagram{
     position: absolute;
-    top: 743px;
-    width: 40px;
+    top: 2550px;
+    width: 50px;
     z-index: 200;
     margin-left: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -252,105 +401,22 @@ h2{
 
 #facebook{
     position: absolute;
-    top: 729px;
-    width: 65px;
+    top: 2536px;
+    width: 78px;
     z-index: 200;
-    margin-left: 70px;
+    margin-left: 88px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #mail{
     position: absolute;
-    top: 740px;
-    width: 50px;
+    top: 2547px;
+    width: 60px;
     z-index: 200;
-    margin-left: 138px;
+    margin-left: 174px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #instagram:hover, #facebook:hover, #mail:hover{
     transform: scale(1.1);
-}
-
-.zodiac-img{
-    position: absolute;
-    z-index: 300;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: auto;
-}
-
-#libra{
-    margin-left: 30px;
-    width: 220px;
-    top: 395px;
-}
-
-#scorpio{
-    margin-left: 250px;
-    width: 232px;
-    top: 392px;
-}
-
-#sagitarius{
-    margin-left: 480px;
-    width: 215px;
-    top: 402px;
-}
-
-#capricorn{
-    margin-left: 730px;
-    width: 210px;
-    top: 400px;
-}
-
-#aquarius{
-    margin-left: 955px;
-    width: 220px;
-    top: 395px;
-}
-
-#pisces{
-    margin-left: 1190px;
-    width: 220px;
-    top: 405px;
-}
-
-#zodiac-text{
-    z-index: 500;
-    position: absolute;
-    top: 560px;
-    color: var(--color01);
-    font-family: cairo;
-    font-size: 20px;
-    font-weight: bold;
-    word-spacing: 140px;
-    margin-left: 100px;
-}
-
-#libra:hover, #scorpio:hover, #sagitarius:hover, #capricorn:hover, #aquarius:hover, #pisces:hover{
-    transform: scale(1.1);
-}
-
-.circle-container{
-    position: relative;
-}
-
-.scroll-circle{
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    position: absolute;
-    top: 640px;
-    z-index: 1000;
-}
-
-#circle-01{
-    margin-left: 680px;
-    background-color: var(--color01);
-    opacity: 0.5;
-}
-
-#circle-02{
-    margin-left: 710px;
-    background-color:#f7a44c;
 }
