@@ -29,7 +29,7 @@ html, body {
 }
 
 body {
-    background-image: url(background-04.jpg);
+    background-image: url(background-05.png);
     background-color: var(--color04);
     background-size: cover;
     background-position: center;
@@ -268,15 +268,7 @@ h2{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#instagram:hover{
-    transform: scale(1.1);
-}
-
-#facebook:hover{
-    transform: scale(1.1);
-}
-
-#mail:hover{
+#instagram:hover, #facebook:hover, #mail:hover{
     transform: scale(1.1);
 }
 
@@ -286,40 +278,40 @@ h2{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#aries{
-    margin-left: 20px;
-    width: 210px;
+#libra{
+    margin-left: 30px;
+    width: 220px;
     top: 395px;
 }
 
-#taurus{
-    margin-left: 240px;
-    width: 230px;
-    top: 390px;
+#scorpio{
+    margin-left: 250px;
+    width: 232px;
+    top: 392px;
 }
 
-#gemini{
-    margin-left: 490px;
-    width: 215px;
+#sagitarius{
+    margin-left: 480px;
+    width: 210px;
     top: 405px;
 }
 
-#cancer{
+#capricorn{
     margin-left: 730px;
     width: 210px;
     top: 400px;
 }
 
-#leo{
-    margin-left: 950px;
+#aquarius{
+    margin-left: 955px;
     width: 220px;
     top: 395px;
 }
 
-#virgo{
-    margin-left: 1180px;
+#pisces{
+    margin-left: 1190px;
     width: 220px;
-    top: 400px;
+    top: 405px;
 }
 
 #zodiac-text{
@@ -330,11 +322,11 @@ h2{
     font-family: cairo;
     font-size: 20px;
     font-weight: bold;
-    word-spacing: 160px;
-    margin-left: 90px;
+    word-spacing: 140px;
+    margin-left: 100px;
 }
 
-#aries:hover, #taurus:hover, #gemini:hover, #cancer:hover, #leo:hover, #virgo:hover{
+#libra:hover, #scorpio:hover, #sagitarius:hover, #capricorn:hover, #aquarius:hover, #pisces:hover{
     transform: scale(1.1);
 }
 
@@ -353,11 +345,11 @@ h2{
 
 #circle-01{
     margin-left: 670px;
-    background-color:#f7a44c;
+    background-color: var(--color01);
+    opacity: 0.5;
 }
 
 #circle-02{
     margin-left: 700px;
-    background-color: var(--color01);
-    opacity: 0.5;
+    background-color:#f7a44c;
 }
