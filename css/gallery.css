@@ -36,9 +36,8 @@ html, body {
 body {
     background-image: url(long-background.jpg);
     background-color: var(--color04);
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -199,28 +198,40 @@ h1{
     font-weight: 500;
     position: absolute;
     top: 100px;
-    left: 125px;
+    left: 160px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: cairo;
+    color: var(--color02);
+    font-weight: lighter;
+    position: absolute;
+    top: 190px;
+    left: 165px;  
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 25px;
-    padding: 200px;
-    max-width: 1000px;
-    margin: 0 auto;
     position: absolute;
-    top: 250px;
+    top: 300px;
+    left: 10%;
+    display: grid; /* Brug grid layout */
+    grid-template-columns: repeat(3, 1fr); /* To kolonner */
+    gap: 20px; /* Mellemrum mellem billederne */
+    padding: 20px;
+    max-width: 100vw; /* Fylder hele skærmens bredde */
+    box-sizing: border-box;
 }
 
 .gallery img {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* Gør billedet kvadratisk */
-    object-fit: cover; /* Sikrer, at billedet bevarer sit forhold */
+    width: 100%; /* Billederne fylder hele kolonnen */
+    height: 350px; /* Bevar billedernes proportioner */
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: #f6b26b 2px solid;
+    border: var(--color05) solid 2px;
 }
+
 
 #logo {
     width: 5rem;
@@ -244,7 +255,7 @@ h1{
 
 #instagram{
     position: absolute;
-    top: 2550px;
+    top: 3000px;
     width: 50px;
     z-index: 200;
     margin-left: 30px;
@@ -253,7 +264,7 @@ h1{
 
 #facebook{
     position: absolute;
-    top: 2536px;
+    top: 2986px;
     width: 78px;
     z-index: 200;
     margin-left: 88px;
@@ -262,7 +273,7 @@ h1{
 
 #mail{
     position: absolute;
-    top: 2547px;
+    top: 2995px;
     width: 60px;
     z-index: 200;
     margin-left: 174px;
