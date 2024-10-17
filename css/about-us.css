@@ -43,6 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    box-sizing:border-box;
 }
 
 #return{
@@ -191,6 +192,62 @@ header label {
 
 }
 
+h1{
+    font-family: cairo;
+    font-size: 3rem;
+    position: absolute;
+    top: 140px;
+    left: 450px;
+    color: var(--color02);
+}
+
+.about-us {
+    position: absolute;
+    top: 270px;
+    left: 225px;
+    width: 80%;
+    height: 900px;
+    max-width: 1000px;
+    background-color:#92779877;
+    color: var(--color02);
+    text-align: center;
+    font-family: cairo;
+    font-size: 20px;
+    border-radius: 25px;
+    line-height: 33px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 70px; /* Indsæt den ønskede padding */
+    box-sizing: border-box; /* Sikrer at padding ikke øger boksens størrelse */
+}
+
+.circle{
+    position: absolute;
+    background-color: #48334dd1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#circle-01{
+    left: 200px;
+    top: 385px;
+}
+
+#circle-02{
+    left: 200px;
+    top: 570px;
+}
+
+#circle-03{
+    left: 200px;
+    top: 755px;
+}
+
+#circle-04{
+    left: 200px;
+    top: 940px;
+}
+
 #logo {
     width: 5rem;
     position: fixed;
@@ -209,30 +266,6 @@ header label {
     position: fixed;
     bottom: 0px;
     right: 20px;
-}
-
-h2{
-    font-family: cairo;
-    font-size: 4rem;
-    position: absolute;
-    top: 150px;
-    left: 460px;
-    color: var(--color02);
-}
-
-#worker-img{
-    position: absolute;
-    top: 300px;
-    left: 370px;
-    width: 100px;
-}
-#work-in-progress{
-    position: absolute;
-    top: 300px;
-    left: 585px;
-    color: var(--color02);
-    font-size: 25px;
-    font-family: cairo;
 }
 
 #instagram{
