@@ -272,6 +272,14 @@ h2{
     color: #926a9f;
 }
 
+#other-article{
+    color: #926a9f;
+}
+
+#other-article:hover{
+    color:#7a4f88
+}
+
 .img-circle{
     color: var(--color05);
     width: 20px;

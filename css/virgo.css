@@ -270,6 +270,25 @@ h2{
 
 #studietips-article{
     color: #926a9f;
+    margin-left: 91px;
+}
+
+#other-article{
+    color: #926a9f;
+}
+
+#other-article:hover{
+    color:#7a4f88
+}
+
+
+#word-link{
+    text-decoration: none;
+    color: #f49c3e;
+}
+
+#word-link:hover{
+    color: #f6b26b;
 }
 
 .img-circle{
