@@ -24,14 +24,14 @@
                 <li><a href="studietips.html">Studietips</a></li>
                 <li><a href="studiemiljoe.html">Studiemiljø</a>
                     <ul>
-                        <li><a href="#">Galleri</a></li>
+                        <li><a href="gallery.html">Galleri</a></li>
                     </ul>
                 </li>
                 <li><a href="stjernetegn.html">Stjernetegn</a></li>
-                <li><a href="#">Galleri</a>
+                <li><a href="gallery.html">Galleri</a>
                     <ul>
-                        <li><a href="#">Studie-steder</a></li>
-                        <li><a href="#">Studie-indretning</a></li>
+                        <li><a href="studiemiljoe.html">Studie-steder</a></li>
+                        <li><a href="studiemiljoe.html">Studie-indretning</a></li>
                     </ul>
                 </li>
                 <li><a href="#contact-section">Kontakt</a></li>
@@ -71,12 +71,16 @@
     <img id="article-img-02" src="img/article-img-02.jpg" alt="Et varmt sted med bogreoler">
     <img id="article-img-01" src="img/article-img-01.jpg" alt="En kvinde, som læser i en bog med en kop kaffe i hånden">
 
-    <p id="third-article-option"><strong>Se også:</strong> <span class="underline-text"
-        >Er du skoletræt? Find råd her</span></p>
+    <p id="third-article-option">
+        <strong>Se også:</strong> 
+        <a href="studiemiljoe.html">
+            <span class="underline-text">Er du skoletræt? Find råd her</span>
+        </a>
+    </p>
 </section>
 </main>
 
-<section class="newsletter">
+<section id="newsletter-section" class="newsletter">
     <h2 id="newsletter-title">Tilmeld dig vores nyhedsbrev!</h2>
     <hr>
     <p>Indtast din email i feltet nedenunder for at få de seneste nyheder og informationer. 
@@ -95,7 +99,7 @@
 <section id="contact-section">
     <img id="instagram" class="contact" src="img/instagram.png" alt="Instagram kontakt-ikon">
     <img id="facebook" class="contact" src="img/facebook.png" alt="Facebook kontakt-ikon">
-    <img id="mail" class="contact" src="img/mail.png" alt="Mail kontakt ikon">
+    <a href="#newsletter-section"><img id="mail" class="contact" src="img/mail.png" alt="Mail kontakt ikon"></a>
 </section>
 
 </body>

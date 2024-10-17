@@ -277,6 +277,7 @@ strong{
 
 .underline-text{
     text-decoration: underline;
+    color: #ffffff;
 }
 
 main section h3{
@@ -385,7 +386,7 @@ h2 a{
     color: var(--color02);
 }
 
-#third-article-option:hover{
+.underline-text:hover{
     color:#927798;
 }
 
@@ -395,8 +396,6 @@ h2 a{
     text-align: center;
     max-width: 530px;
     padding: 10px 40px;
-    border-top-right-radius: 45px;
-    border-top-left-radius: 45px;
     color:#fff;
     font-family: cairo;
     position: absolute;
