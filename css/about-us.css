@@ -78,7 +78,6 @@ header {
     right:0;
     background: var(--color04);
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    padding: auto;
     padding-right: 20px;
     display: flex;
     align-items: center;
